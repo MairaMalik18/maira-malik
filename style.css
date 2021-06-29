@@ -65,10 +65,21 @@
 .banner {
   position: relative;
 }
+.btn-banner{
+  color: white;
+  background-color: #3face4;
+  border-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px;
+  width: 115px;
+}
 .banner-text {
   position: absolute;
-  top: 40%;
-  left: 10%;
+  top: 30%;
+  left: 9%;
   font-size: 52px;
   color: honeydew;
   font-style: none;
@@ -121,6 +132,11 @@ div.b1 {
   justify-content: center;
   flex-wrap: wrap;
 }
+.mbl-navbar>.dropbtn-mbl {
+  border-style: none;
+  float: right;
+  background-color: white;
+}
 .second-navbar>a {
   padding-right: 15px;
   text-align: center;
@@ -139,7 +155,7 @@ div.b1 {
   justify-content: center;
   padding: 150px 0px;
   -webkit-background-size: cover;
-  background: url(xn3.png) no-repeat center;
+  background: url(images/xn3.png) no-repeat center;
   background-color: #a5d3e8;
   background-blend-mode: multiply;
   position: relative;
@@ -207,6 +223,9 @@ div.b1 {
   cursor: pointer;
   border-radius: 38px;
 }
+.banner>img {
+  width:100%; 
+}
 .review-content{
   background-color: #ffffff;
   margin-right: 20px;
@@ -243,20 +262,29 @@ div.gallery>.desc :hover {
   }
   .gallery-wrapper>.gallery{
     width: 100%;
-    padding: 10px;
+    padding: 10px 0px;
   }
- .banner-text{
-    font-size: 100%;
- }
+  .banner-text{
+    font-size: 80%;
+  }
   #logo{
     padding-left: 10px;
   }
   #rs0{
     display: none;
   }
+  .banner>img {
+    height: 100%;
+  }
 }
 @media only screen and (min-width: 480px) {
   .mbl-page,.mbl-footer{
+    display: none;
+  }
+  .btn-banner{
+    display: none;
+  }
+  .mbl-navbar{
     display: none;
   }
 }
